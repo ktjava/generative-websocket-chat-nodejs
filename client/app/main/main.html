@@ -1,0 +1,24 @@
+<canvas id="myCanvas" width="1024" height="768"></canvas>
+<div id="title"><span class="red">R</span>ainbow <span class="green">C</span>olorful <span class="blue">B</span>ubbles</div>
+<div id="chat_shell_open">Chat</div>
+<div id="chat_shell">
+	<h1>Chat Shell</h1>
+
+	<form>
+	  <label>Name:</label><input ng-model="name" value=""><br>
+	  <label>Message:</label><input id="message_form" ng-model="message" value=""><br>
+	  <input type="file" id="file_form" size="30" value=""><br>
+	  <input type="button" ng-click="submit()" value="Submit">
+	</form>
+
+	<h5>Received Messages</h5>
+
+	<div id="messages"></div>
+</div>
+<div id="time_open">Time</div>
+<div id="time">
+	<span id="current_time">
+		<h3>Current Time</h3>
+		<span id="current_time_value"></span>
+	</span>
+</div>
